@@ -22,4 +22,4 @@ An app that chooses songs of a specific BPM from all your Spotify liked and play
 - Learn about how run projects outside my local system
 - Write Features
 
-## 
+##
