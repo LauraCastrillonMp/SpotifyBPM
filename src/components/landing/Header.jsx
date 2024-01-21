@@ -12,25 +12,7 @@ export default function Header() {
           className="text-sm font-medium hover:underline underline-offset-4"
           href="#"
         >
-          Features
-        </a>
-        <a
-          className="text-sm font-medium hover:underline underline-offset-4"
-          href="#"
-        >
-          Pricing
-        </a>
-        <a
-          className="text-sm font-medium hover:underline underline-offset-4"
-          href="#"
-        >
           About
-        </a>
-        <a
-          className="text-sm font-medium hover:underline underline-offset-4"
-          href="#"
-        >
-          Contact
         </a>
       </nav>
     </header>
