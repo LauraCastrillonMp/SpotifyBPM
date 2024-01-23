@@ -1,10 +1,11 @@
 import React from 'react'
-import Header from 'components/landing/Header'
+import HeaderLanding from 'components/landing/HeaderLanding'
+import FooterLanding from 'components/landing/FooterLanding'
 
 export default function Landing() {
   return (
     <div className="flex flex-col min-h-screen bg-[#1DB954] text-white">
-      <Header />
+      <HeaderLanding />
       <main className="flex-1">
         <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48">
           <div className="px-4 md:px-6">
@@ -112,37 +113,7 @@ export default function Landing() {
           </div>
         </section>
       </main>
-      <footer className="flex text-sm justify-between gap-2 dark:bg-gray-800 sm:flex-row py-6 w-full items-center px-4 md:px-6">
-        <div className="space-y-2">
-          <p className="text-white-500 dark:text-white-400">
-            🧠 Idea by{' '}
-            <a
-              className="underline underline-offset-4"
-              href="https://github.com/Divide-By-0/ideas-for-projects-people-would-use"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Divide-By-0
-            </a>
-          </p>
-          <p className="text-white-500 dark:text-white-400">
-            © 2024 SpotifyBPM. All rights reserved.
-          </p>
-        </div>
-        <div className="space-y-2">
-          <p className=" text-white-500 dark:text-white-400">Built with ❤️</p>
-        </div>
-        <div>
-          <nav className="sm:ml-auto flex gap-4 sm:gap-6">
-            <a className=" hover:underline underline-offset-4" href="#">
-              Contact Us
-            </a>
-            <a className=" hover:underline underline-offset-4" href="https://www.privacypolicies.com/generic/">
-              Privacy
-            </a>
-          </nav>
-        </div>
-      </footer>
+      <FooterLanding />
     </div>
   )
 }
