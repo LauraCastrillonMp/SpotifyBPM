@@ -21,6 +21,14 @@ const router = createBrowserRouter([
     path: "screen2",
     element: <Screen2 />,
   },
+  {
+    path: "screen3",
+    element: <Screen3 />,
+  },
+  {
+    path: "screen4",
+    element: <Screen4 />,
+  },
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
