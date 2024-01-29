@@ -1,5 +1,6 @@
 import "@/styles/globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
+
 import { Inter as FontSans } from "next/font/google";
 
 interface RootLayoutProps {
@@ -7,6 +8,8 @@ interface RootLayoutProps {
 }
 
 import { cn } from "@/lib/utils";
+import { SiteHeader } from "@/components/site-header";
+import { SiteFooter } from "@/components/site-footer";
 
 export const fontSans = FontSans({
   subsets: ["latin"],
@@ -29,7 +32,11 @@ export default function RootLayout({ children }: RootLayoutProps) {
           enableSystem
           disableTransitionOnChange
         >
-          {children}
+          <div className="relative flex min-h-screen flex-col bg-background">
+            <SiteHeader />
+              <main className="flex-1">{children}</main>
+            <SiteFooter />
+          </div>
         </ThemeProvider>
       </body>
     </html>
