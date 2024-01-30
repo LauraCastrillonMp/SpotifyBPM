@@ -9,16 +9,17 @@ import { cn } from "@/lib/utils";
 
 export function SiteHeader() {
   return (
-    <header className="flex justify-between items-center py-2 px-4 sticky border-b border-white/10 backdrop-blur">
+    <header className="flex justify-between items-center py-3 px-4 w-full border-b border-slate-200 dark:border-white/10 md:px-8">
       <span className="text-xl font-semibold">Spotify Playlist To</span>
-      <nav className="flex items-center gap-1">
+      <nav className="flex items-center gap-0">
         <Link href={siteConfig.links.github} target="_blank" rel="noreferrer">
           <div
             className={cn(
               buttonVariants({
                 variant: "ghost",
+                size: "default",
               }),
-              "w-9 px-0"
+              "w-10 px-0"
             )}
           >
             <Icons.gitHub className="h-4 w-4" />
@@ -30,8 +31,9 @@ export function SiteHeader() {
             className={cn(
               buttonVariants({
                 variant: "ghost",
+                size: "default",
               }),
-              "w-9 px-0"
+              "w-10 px-0"
             )}
           >
             <Icons.twitter className="h-3 w-3 fill-current" />
