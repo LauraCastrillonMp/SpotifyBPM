@@ -19,7 +19,7 @@ export default function Home() {
             </p>
           </div>
           <div className="flex gap-2">
-            <Link href="#" className={cn(buttonVariants())}>
+            <Link href="/transfer" className={cn(buttonVariants())}>
               Get Started
             </Link>
             <Link
