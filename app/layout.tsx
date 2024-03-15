@@ -11,6 +11,14 @@ import { cn } from "@/lib/utils";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 
+export const metadata = {
+  title: {
+    default: "Spotify Playlist To",
+    template: "%s | Spotify Playlist To",
+  },
+  description: "Spotify Playlist To",
+};
+
 export const fontSans = FontSans({
   subsets: ["latin"],
   variable: "--font-sans",
