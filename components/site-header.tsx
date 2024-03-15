@@ -10,7 +10,9 @@ import { cn } from "@/lib/utils";
 export function SiteHeader() {
   return (
     <header className="flex justify-between items-center py-3 px-4 w-full border-b border-slate-200 dark:border-white/10 md:px-8">
-      <span className="text-xl font-semibold">Spotify Playlist To</span>
+      <Link href={siteConfig.links.home}>
+        <span className="text-xl font-semibold">Spotify Playlist To</span>
+      </Link>
       <nav className="flex items-center gap-0">
         <Link href={siteConfig.links.github} target="_blank" rel="noreferrer">
           <div
