@@ -7,8 +7,5 @@ export const options: NextAuthOptions = {
       clientId: process.env.SPOTIFY_CLIENT_ID as string,
       clientSecret: process.env.SPOTIFY_CLIENT_SECRET as string,
     }),
-  ],
-  pages: {
-    signIn: "/auth/signin",
-  },
+  ]
 };
