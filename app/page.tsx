@@ -20,7 +20,6 @@ export default function Home() {
           </div>
           <div className="flex gap-2">
           <Link
-              target="_blank"
               rel="noreferrer"
               href={siteConfig.links.signIn}
               className={cn(buttonVariants())}
