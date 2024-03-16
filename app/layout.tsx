@@ -11,6 +11,8 @@ import { cn } from "@/lib/utils";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 
+import AuthProvider from "@/app/context/AuthProvider";
+
 export const metadata = {
   title: {
     default: "Spotify Playlist To",
@@ -31,18 +33,20 @@ export default function RootLayout({ children }: RootLayoutProps) {
       <body
         className={cn("min-h-screen font-sans antialiased", fontSans.variable)}
       >
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
-          <div className="relative flex min-h-screen flex-col ">
-            <SiteHeader />
-            <main className="flex-1">{children}</main>
-            <SiteFooter />
-          </div>
-        </ThemeProvider>
+        <AuthProvider>
+          <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
+          >
+            <div className="relative flex min-h-screen flex-col ">
+              <SiteHeader />
+              <main className="flex-1">{children}</main>
+              <SiteFooter />
+            </div>
+          </ThemeProvider>
+        </AuthProvider>
       </body>
     </html>
   );
