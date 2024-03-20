@@ -8,12 +8,8 @@ export default async function Home() {
   const session = await getServerSession(options);
 
   return (
-    <>
-      {session ? (
-        <Transfer />
-      ) : (
-        <InitialScreen />
-      )}
-    </>  
+    <section className="w-full flex flex-col items-center justify-center px-2 md:px-8 py-2 md:py-6">
+      {session ? <Transfer /> : <InitialScreen />}
+    </section> 
   );
 }
