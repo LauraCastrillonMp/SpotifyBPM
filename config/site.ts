@@ -6,6 +6,7 @@ export const siteConfig = {
     "The Best Transfer Spotify Playlist To Any Music Streaming Service. Your favorite playlists in one place.",
   links: {
     home: "/",
+    signIn: "/api/auth/callback",
     twitter: "https://twitter.com/LauraMaraC40352",
     github: "https://github.com/LauraCastrillonMp/spotify-playlist-to",
   },

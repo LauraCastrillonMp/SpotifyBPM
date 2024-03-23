@@ -11,6 +11,8 @@ import { cn } from "@/lib/utils";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 
+import AuthProvider from "@/app/context/AuthProvider";
+
 export const metadata = {
   title: {
     default: "Spotify Playlist To",
@@ -31,6 +33,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
       <body
         className={cn("font-sans", fontSans.variable)}
       >
+        <AuthProvider>
           <ThemeProvider
             attribute="class"
             defaultTheme="system"
@@ -43,6 +46,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
               <SiteFooter />
             </div>
           </ThemeProvider>
+        </AuthProvider>
       </body>
     </html>
   );
